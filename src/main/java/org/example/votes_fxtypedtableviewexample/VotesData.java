@@ -29,6 +29,7 @@ public class VotesData {
                 "Ady Endre utca", "József Attila utca", "Széchenyi utca", "Bartók Béla út", "Munkácsy utca"
         };
         String[] parties = {"TISZA", "FIDESZ", "Mi Hazánk"};
+        double[] partyProbabilities = {0.3, 0.6, 0.1}; // Probabilities for each party
 
         Vote[] generatedVotes = new Vote[120];
         for (int i = 0; i < generatedVotes.length; i++) {
@@ -53,9 +54,14 @@ public class VotesData {
                     lastNames[lastNameIndex],
                     birthday,
                     address,
-                    parties[i % parties.length]
+                    parties[getRandomPartyIndex(partyProbabilities)]
             );
         }
         return generatedVotes;
+    }
+
+    private static int getRandomPartyIndex(double[] partyProbabilities) {
+        return Math.random() < partyProbabilities[0] ? 0 :
+                (Math.random() < partyProbabilities[0] + partyProbabilities[1] ? 1 : 2);
     }
 }

@@ -42,12 +42,12 @@
    <center>
       <TableView fx:id="votesTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <columns>
-          <TableColumn prefWidth="50.0" text="Id" />
-          <TableColumn prefWidth="75.0" text="First Name" />
-            <TableColumn prefWidth="75.0" text="Last Name" />
-            <TableColumn prefWidth="75.0" text="Birthday" />
-            <TableColumn prefWidth="100.0" text="Address" />
-            <TableColumn minWidth="9.20001220703125" prefWidth="75.0" text="Voted Party" />
+            <TableColumn fx:id="idColumn" prefWidth="50.0" text="Id" />
+            <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="birthdayColumn" prefWidth="75.0" text="Birthday" />
+            <TableColumn fx:id="addressColumn" prefWidth="100.0" text="Address" />
+            <TableColumn fx:id="partyColumn" minWidth="9.20001220703125" prefWidth="75.0" text="Voted Party" />
         </columns>
       </TableView>
    </center>
