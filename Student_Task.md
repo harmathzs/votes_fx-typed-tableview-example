@@ -8,7 +8,7 @@ Complete the provided JavaFX voting application by implementing:
 - validation for filter input; and
 - a summary based on the rows currently displayed in the table.
 
-The application already contains a JavaFX `TableView`, a model class named `Vote`, and 120 generated Hungarian voter records in `VotesData`.
+The application already contains a JavaFX `TableView`, a model class named `Vote`, and some generated Hungarian voter records in `VotesData`.
 
 ## 2. Learning goals
 
@@ -28,7 +28,7 @@ The starting application provides:
 
 - a TableView with ID, first name, last name, birthday, address, and voted party columns;
 - a `Vote` class with an ID, name, `LocalDate` birthday, address, and party;
-- 120 generated records in `VotesData.votes`; and
+- some generated records in `VotesData.votes`; and
 - FXML areas for filters on the left and summary information on the right.
 
 You may modify the FXML, controller, and supporting Java classes. Do not change the basic project structure unnecessarily.
@@ -46,7 +46,7 @@ The application should present the following areas:
 | [______________]     |-------------------------------------| TISZA: 0 (0.0%)      |
 |                      |                                     | FIDESZ: 0 (0.0%)     |
 | Party                |                                     | Mi Hazánk: 0 (0.0%)  |
-| [ All              v]|                                     |                      |
+| [ All             v] |                                     |                      |
 |                      |                                     | Average age: -       |
 | Birthday             |                                     | Youngest: -          |
 | From [__________]    |                                     | Oldest: -            |
@@ -293,25 +293,11 @@ Test at least the following cases:
 ## 13. Submission
 
 Submit:
+your JavaFX project link to a public GitHub repository or a ZIP file containing:
 
 - the complete JavaFX project;
 - modified FXML and Java source files;
 - a short description of how filtering and summary calculations work; and
 - the test cases used to verify the implementation.
 
-Do not submit generated build folders such as `target` or IDE-specific files.
-
-## 14. Grading rubric
-
-| Requirement | Points |
-|---|---:|
-| Table values and user interface layout | 10 |
-| Name text filter | 10 |
-| Party filter | 10 |
-| Birthday range filtering | 15 |
-| AND logic and Apply/Reset behavior | 15 |
-| Input validation and error message | 15 |
-| Correct summary calculations | 20 |
-| Empty-result handling and code quality | 5 |
-| **Total** | **100** |
-
+Do not submit generated build folders such as `target`, sensitive data, your credentials, or IDE-specific files.
