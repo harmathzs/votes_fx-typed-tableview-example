@@ -1,14 +1,18 @@
 package org.example.votes_fxtypedtableviewexample;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.fxml.Initializable;
+import javafx.scene.control.TableView;
 
-public class VotesController {
-    @FXML
-    private Label welcomeText;
+import java.net.URL;
+import java.util.ResourceBundle;
 
+public class VotesController implements Initializable {
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    public TableView<Vote> votesTableView;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
     }
 }
