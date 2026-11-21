@@ -1,4 +1,4 @@
-package org.example.votes_fxtypedtableviewexample;
+
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
@@ -9,49 +9,15 @@ import javafx.scene.control.TableView;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class VotesController implements Initializable {
-    @FXML
-    public TableView<Vote> votesTableView;
-
-    @FXML
-    private TableColumn<Vote, String> idColumn;
-
-    @FXML
-    private TableColumn<Vote, String> firstNameColumn;
-
-    @FXML
-    private TableColumn<Vote, String> lastNameColumn;
-
-    @FXML
-    private TableColumn<Vote, String> birthdayColumn;
-
-    @FXML
-    private TableColumn<Vote, String> addressColumn;
-
-    @FXML
-    private TableColumn<Vote, String> partyColumn;
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        idColumn.setCellValueFactory(cell ->
-                new SimpleStringProperty(cell.getValue().id));
-
-        firstNameColumn.setCellValueFactory(cell ->
-                new SimpleStringProperty(cell.getValue().firstName));
-
-        lastNameColumn.setCellValueFactory(cell ->
-                new SimpleStringProperty(cell.getValue().lastName));
-
-        birthdayColumn.setCellValueFactory(cell ->
-                new SimpleStringProperty(cell.getValue().birthday.toString()));
-
-        addressColumn.setCellValueFactory(cell ->
-                new SimpleStringProperty(cell.getValue().address));
-
-        partyColumn.setCellValueFactory(cell ->
-                new SimpleStringProperty(cell.getValue().votedParty));
-
-
-        votesTableView.getItems().addAll(VotesData.votes);
-    }
+/**
+ * This class is the controller for the Votes application. It manages the interaction between the user interface and the underlying data model.
+ *
+ * @author Zsolt Harmath
+ * @implSpec TODO: Implement the necessary fields and methods to handle user interactions and solve the specified tasks.
+ */
+public class VotesController {
+    /**
+     * The TableView that displays the votes.
+     */
+    public TableView votesTableView;
 }

@@ -1,4 +1,4 @@
-package org.example.votes_fxtypedtableviewexample;
+
 
 /**
  * This class generates an array of Vote objects with sample random data.
